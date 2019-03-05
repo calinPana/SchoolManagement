@@ -5,19 +5,29 @@ import java.util.*;
 public class Student {
     String name;
     ArrayList<Integer> grades = new ArrayList<>();
-    Classroom classroom;
+//    Classroom classroom;
 
-    public Student(String name, Classroom classroom) {
+    public Student(String name) {
         this.name = name;
-        this.classroom = classroom;
 
     }
 
-    public Student(String name, ArrayList<Integer> grades, Classroom classroom) {
+    public Student(String name, ArrayList<Integer> grades) {
         this.name = name;
         this.grades = grades;
-        this.classroom = classroom;
 
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public ArrayList<Integer> getGrades() {
+        return grades;
+    }
+
+    public void addGrade (Integer grade){
+        grades.add(grade);
     }
 
 }
