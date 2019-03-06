@@ -10,4 +10,28 @@ public class Subject {
         this.name = name;
         this.teacher = teacher;
     }
+
+    public String getName()
+
+    {
+        return name;
+    }
+
+
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+//    public String toString() {
+//        return this.name + " is taught by " + this.teacher.getName();
+//    }
+
+
+    @Override
+    public String toString() {
+        return "Subject{" +
+                "name='" + name + '\'' +
+                ", teacher=" + teacher +
+                '}';
+    }
 }

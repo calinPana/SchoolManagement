@@ -18,7 +18,7 @@ public class Student {
 
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
@@ -26,8 +26,12 @@ public class Student {
         return grades;
     }
 
-    public void addGrade (Integer grade){
+    public void setGrades(Integer grade) {
         grades.add(grade);
+    }
+
+    public String toString(){
+        return "The student " + this.name + " has the following grades: " + this.grades;
     }
 
 }
